@@ -1,0 +1,113 @@
+$size: 50px;
+$movement: 0.85;
+$stop: 0.5;
+$duration: $movement * (1 / $stop) * 1s;
+$ease-pattern: cubic-bezier(1, -0.52, 0.26, 0.89);
+$stagger: 0.1125s;
+
+.Container {
+    background-color: #f7f7f7;
+    width: 100vw;
+    min-height: 80vh;
+}
+
+@keyframes jump {
+    0%,
+    50%,
+    100% {
+        transform: scaleX(1) scaleY(1) translate(0, 0);
+    }
+    15% {
+        transform: scaleX(1.2) scaleY(0.8) translate(0, 0);
+    }
+    25% {
+        transform: scaleX(0.9) scaleY(1.1) translate(0, -100%);
+    }
+}
+
+@keyframes turn {
+    0%,
+    30.625% {
+        transform: rotateX(0deg);
+    }
+    33.125%,
+    81.625% {
+        transform: rotateX(90deg);
+    }
+    83.125%,
+    100% {
+        transform: rotateX(180deg);
+    }
+}
+
+.Word {
+    display: flex;
+    transform: translate($size * 0.7, 0) rotateX(-30deg) rotateY(45deg);
+    transform-style: preserve-3d;
+}
+
+.Block {
+    animation-name: jump;
+    animation-duration: $duration;
+    animation-timing-function: $ease-pattern;
+    animation-iteration-count: infinite;
+    transform-origin: bottom center;
+    transform-style: preserve-3d;
+
+    &__Face {
+        color: #333333;
+        font-family: roboto, open sans;
+        font-size: 2em;
+        width: $size;
+        height: $size;
+        margin-right: $size * 0.2;
+        position: relative;
+        text-transform: uppercase;
+        transform-style: preserve-3d;
+
+        animation-name: turn;
+        animation-duration: $duration * 4;
+        animation-timing-function: ease;
+        animation-delay: $stagger;
+        animation-iteration-count: infinite;
+    }
+
+    &__Letter {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border: 5px #5ab334 solid;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        height: 100%;
+
+        &:nth-of-type(1) {
+            transform: translate3d(-50%, -50%, 0) translate3d(0, 0, $size * 0.5);
+        }
+
+        &:nth-of-type(2) {
+            transform: translate3d(-50%, -50%, 0) rotateX(90deg) translate3d(0, 0, $size * 0.5);
+        }
+
+        &:nth-of-type(3) {
+            transform: translate3d(-50%, -50%, 0) rotateX(180deg) translate3d(0, 0, $size * 0.5);
+        }
+
+        &:nth-of-type(4) {
+            transform: translate3d(-50%, -50%, 0) rotateX(-90deg) translate3d(0, 0, $size * 0.5);
+        }
+
+        &:nth-of-type(5) {
+            transform: translate3d(-50%, -50%, 0) rotateY(-90deg) translate3d(0, 0, $size * 0.5);
+        }
+    }
+}
+
+
+
+

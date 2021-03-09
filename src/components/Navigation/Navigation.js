@@ -9,7 +9,7 @@ const navigation = (props) => (
     <Container className={classes.Navigation}>
         <Logo />
         <div className={classes.NavItemContainer}>
-            <NavItems />
+            {/* <NavItems /> */}
         </div>
     </Container>
     

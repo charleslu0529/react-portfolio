@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from './components/Container/Container';
 import Navigation from './components/Navigation/Navigation';
+import Forthcoming from "./components/Forthcoming/Forthcoming";
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
         <Container>
             <Navigation />
             <Container>
-                Hello World! This is where content will be!
+                <Forthcoming />
             </Container>
         </Container>
     </div>
