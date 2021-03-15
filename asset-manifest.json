@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/charleslu0529/Portfolio.git/static/css/main.46b82a1d.chunk.css",
+    "main.js": "/charleslu0529/Portfolio.git/static/js/main.c5400de6.chunk.js",
+    "main.js.map": "/charleslu0529/Portfolio.git/static/js/main.c5400de6.chunk.js.map",
+    "runtime-main.js": "/charleslu0529/Portfolio.git/static/js/runtime-main.330fef95.js",
+    "runtime-main.js.map": "/charleslu0529/Portfolio.git/static/js/runtime-main.330fef95.js.map",
+    "static/js/2.c60da6a7.chunk.js": "/charleslu0529/Portfolio.git/static/js/2.c60da6a7.chunk.js",
+    "static/js/2.c60da6a7.chunk.js.map": "/charleslu0529/Portfolio.git/static/js/2.c60da6a7.chunk.js.map",
+    "index.html": "/charleslu0529/Portfolio.git/index.html",
+    "precache-manifest.526dd575b99893cc41e61120578cf342.js": "/charleslu0529/Portfolio.git/precache-manifest.526dd575b99893cc41e61120578cf342.js",
+    "service-worker.js": "/charleslu0529/Portfolio.git/service-worker.js",
+    "static/css/main.46b82a1d.chunk.css.map": "/charleslu0529/Portfolio.git/static/css/main.46b82a1d.chunk.css.map",
+    "static/js/2.c60da6a7.chunk.js.LICENSE.txt": "/charleslu0529/Portfolio.git/static/js/2.c60da6a7.chunk.js.LICENSE.txt",
+    "static/media/KMLu.png": "/charleslu0529/Portfolio.git/static/media/KMLu.ffe20925.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.330fef95.js",
+    "static/js/2.c60da6a7.chunk.js",
+    "static/css/main.46b82a1d.chunk.css",
+    "static/js/main.c5400de6.chunk.js"
+  ]
+}
