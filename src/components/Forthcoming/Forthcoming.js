@@ -1,18 +1,16 @@
 import React from "react";
 import classes from "./Forthcoming.module.scss";
+import LetterCube from "../LetterCube/LetterCube";
 
-const forthcoming = () => (
+const forthcoming = (props) => (
     <div className={classes.Container}>
         <div className={classes.Word}>
-            <div className={classes.Block}>
-                <div className={classes.Block__Face}>
-                    <span className={classes.Block__Letter}>c</span>
-                    <span className={classes.Block__Letter}>s</span>
-                    <span className={classes.Block__Letter}>c</span>
-                    <span className={classes.Block__Letter}>s</span>
-                    <span className={classes.Block__Letter}></span>
-                </div>
-            </div>
+            <LetterCube letterOne="C" letterTwo="S" index="6" />
+            <LetterCube letterOne="O" letterTwo="O" index="5" />
+            <LetterCube letterOne="M" letterTwo="O" index="4" />
+            <LetterCube letterOne="I" letterTwo="N" index="3" />
+            <LetterCube letterOne="N" letterTwo="." index="2" />
+            <LetterCube letterOne="G" letterTwo="." index="1" />
         </div>
     </div>
 );
